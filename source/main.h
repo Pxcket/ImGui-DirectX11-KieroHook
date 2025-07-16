@@ -24,12 +24,11 @@ LRESULT __stdcall WndProc(const HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lPar
     // its annoying when unloaded, but not planning to fix it. if its even possible
 
 
-	if (uMsg == WM_KEYUP && wParam == VK_DELETE)
+    if (uMsg == WM_KEYUP && wParam == VK_DELETE)
     {
         vars->UI->ToggleMenu ^= 1;
 		 
     }
-
 
     if (uMsg == WM_KEYUP && wParam == VK_END)
     {
