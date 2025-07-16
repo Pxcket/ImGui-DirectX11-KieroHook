@@ -17,7 +17,7 @@ void InitHooks()
 	*/
 
 	/*
-	uintptr_t FunctionOffset = 0x0000 //Declare this over the Init Hooks Void
+	uintptr_t FunctionOffset = 0x0000; //Declare this over the Init Hooks Void
 	
 	MH_CreateHook(reinterpret_cast<void**>(ModuleGA + (FunctionOffset)), &your_FunctionName_Hook, (void**)&your_FunctionName_Original);
 	MH_EnableHook(reinterpret_cast<void**>(ModuleGA + (FunctionOffset)));
