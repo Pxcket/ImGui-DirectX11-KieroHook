@@ -4,6 +4,8 @@
 #include "utils/c_logger.h"
 #include "gui/int/assets/PoppinsSemiBold.h"
 #include "gui/int/assets/gui styles.h"
+
+
 extern LRESULT ImGui_ImplWin32_WndProcHandler(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
 
 Present oPresent;
@@ -26,6 +28,13 @@ LRESULT __stdcall WndProc(const HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lPar
     {
         vars->UI->ToggleMenu ^= 1;
 		 
+    }
+
+
+    if (uMsg == WM_KEYUP && wParam == VK_END)
+    {
+        vars->UI->ToggleMenu ^= 1;
+
     }
 
     if (vars->UI->ToggleMenu)

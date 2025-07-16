@@ -24,45 +24,45 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="gui\ext\libs\imgui\imgui.cpp">
+    <ClCompile Include="utils\libs\imgui\imgui.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="gui\ext\libs\imgui\imgui_demo.cpp">
+    <ClCompile Include="utils\libs\imgui\imgui_demo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="gui\ext\libs\imgui\imgui_draw.cpp">
+    <ClCompile Include="utils\libs\imgui\imgui_draw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="gui\ext\libs\imgui\imgui_impl_dx11.cpp">
+    <ClCompile Include="utils\libs\imgui\imgui_impl_dx11.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="gui\ext\libs\imgui\imgui_impl_win32.cpp">
+    <ClCompile Include="utils\libs\imgui\imgui_impl_win32.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="gui\ext\libs\imgui\imgui_widgets.cpp">
+    <ClCompile Include="utils\libs\imgui\imgui_widgets.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="gui\ext\libs\kiero\kiero.cpp">
+    <ClCompile Include="utils\libs\kiero\kiero.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="gui\ext\libs\kiero\minhook\src\buffer.c">
+    <ClCompile Include="utils\libs\kiero\minhook\src\buffer.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="gui\ext\libs\kiero\minhook\src\hde\hde32.c">
+    <ClCompile Include="utils\libs\kiero\minhook\src\hde\hde32.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="gui\ext\libs\kiero\minhook\src\hde\hde64.c">
+    <ClCompile Include="utils\libs\kiero\minhook\src\hde\hde64.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="gui\ext\libs\kiero\minhook\src\hook.c">
+    <ClCompile Include="utils\libs\kiero\minhook\src\hook.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="gui\ext\libs\kiero\minhook\src\trampoline.c">
+    <ClCompile Include="utils\libs\kiero\minhook\src\trampoline.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="gui\ext\libs\kiero\minhook\dll_resources\MinHook.rc">
+    <ResourceCompile Include="utils\libs\kiero\minhook\dll_resources\MinHook.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
   </ItemGroup>
@@ -79,55 +79,55 @@
     <ClInclude Include="gui\int\vis\radial.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="gui\ext\libs\imgui\imconfig.h">
+    <ClInclude Include="utils\libs\imgui\imconfig.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="gui\ext\libs\imgui\imgui.h">
+    <ClInclude Include="utils\libs\imgui\imgui.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="gui\ext\libs\imgui\imgui_impl_dx11.h">
+    <ClInclude Include="utils\libs\imgui\imgui_impl_dx11.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="gui\ext\libs\imgui\imgui_impl_win32.h">
+    <ClInclude Include="utils\libs\imgui\imgui_impl_win32.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="gui\ext\libs\imgui\imgui_internal.h">
+    <ClInclude Include="utils\libs\imgui\imgui_internal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="gui\ext\libs\imgui\imstb_rectpack.h">
+    <ClInclude Include="utils\libs\imgui\imstb_rectpack.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="gui\ext\libs\imgui\imstb_textedit.h">
+    <ClInclude Include="utils\libs\imgui\imstb_textedit.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="gui\ext\libs\imgui\imstb_truetype.h">
+    <ClInclude Include="utils\libs\imgui\imstb_truetype.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="gui\ext\libs\kiero\kiero.h">
+    <ClInclude Include="utils\libs\kiero\kiero.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="gui\ext\libs\kiero\minhook\include\MinHook.h">
+    <ClInclude Include="utils\libs\kiero\minhook\include\MinHook.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="gui\ext\libs\kiero\minhook\src\buffer.h">
+    <ClInclude Include="utils\libs\kiero\minhook\src\buffer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="gui\ext\libs\kiero\minhook\src\hde\hde32.h">
+    <ClInclude Include="utils\libs\kiero\minhook\src\hde\hde32.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="gui\ext\libs\kiero\minhook\src\hde\hde64.h">
+    <ClInclude Include="utils\libs\kiero\minhook\src\hde\hde64.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="gui\ext\libs\kiero\minhook\src\hde\pstdint.h">
+    <ClInclude Include="utils\libs\kiero\minhook\src\hde\pstdint.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="gui\ext\libs\kiero\minhook\src\hde\table32.h">
+    <ClInclude Include="utils\libs\kiero\minhook\src\hde\table32.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="gui\ext\libs\kiero\minhook\src\hde\table64.h">
+    <ClInclude Include="utils\libs\kiero\minhook\src\hde\table64.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="gui\ext\libs\kiero\minhook\src\trampoline.h">
+    <ClInclude Include="utils\libs\kiero\minhook\src\trampoline.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="utils\globals.hpp">
@@ -153,7 +153,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="gui\ext\libs\kiero\minhook\dll_resources\MinHook.def">
+    <None Include="utils\libs\kiero\minhook\dll_resources\MinHook.def">
       <Filter>Source Files</Filter>
     </None>
   </ItemGroup>
