@@ -60,6 +60,9 @@
     <ClCompile Include="utils\libs\kiero\minhook\src\trampoline.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="utils\globals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="utils\libs\kiero\minhook\dll_resources\MinHook.rc">

@@ -5,7 +5,7 @@
 
 HRESULT __stdcall hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT Flags)
 {
-	if (!vars->LOD->init)
+	if (!globals::LOD::init)
 	{
 		if (SUCCEEDED(pSwapChain->GetDevice(__uuidof(ID3D11Device), (void**)& pDevice)))
 		{
@@ -19,7 +19,7 @@ HRESULT __stdcall hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT 
 			pBackBuffer->Release();
 			oWndProc = (WNDPROC)SetWindowLongPtr(window, GWLP_WNDPROC, (LONG_PTR)WndProc);
 			InitGui();
-			vars->LOD->init = true;
+			globals::LOD::init = true;
 		}
 
 		else
@@ -31,7 +31,7 @@ HRESULT __stdcall hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT 
 	ImGui::NewFrame();
 
 	watermark();
-	if (vars->UI->ToggleMenu) { CustomCursorDraw(); MenuDraw(); }
+	if (globals::UI::ToggleMenu) { CustomCursorDraw(); MenuDraw(); }
 
 	ImGui::Render();
 	pContext->OMSetRenderTargets(1, &mainRenderTargetView, NULL);
@@ -47,9 +47,9 @@ DWORD WINAPI MainThread(LPVOID lpReserved)
 		if (kiero::init(kiero::RenderType::D3D11) == kiero::Status::Success)
 		{
 			kiero::bind(8, (void**)& oPresent, hkPresent);
-			vars->LOD->init_hook = true;
+			globals::LOD::init_hook = true;
 		}
-	} while (!vars->LOD->init_hook);
+	} while (!globals::LOD::init_hook);
 	return TRUE;
 }
 

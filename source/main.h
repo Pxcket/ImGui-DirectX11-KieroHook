@@ -26,17 +26,17 @@ LRESULT __stdcall WndProc(const HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lPar
 
     if (uMsg == WM_KEYUP && wParam == VK_DELETE)
     {
-        vars->UI->ToggleMenu ^= 1;
+        globals::UI::ToggleMenu ^= 1;
 		 
     }
 
     if (uMsg == WM_KEYUP && wParam == VK_END)
     {
-        vars->UI->ToggleMenu ^= 1;
+        globals::UI::ToggleMenu ^= 1;
 
     }
 
-    if (vars->UI->ToggleMenu)
+    if (globals::UI::ToggleMenu)
     {
         ImGui_ImplWin32_WndProcHandler(hWnd, uMsg, wParam, lParam);
         return true;

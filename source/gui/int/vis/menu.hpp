@@ -1,6 +1,5 @@
 #pragma once
-#include "../../ext/libs/imgui/imgui.h"
-
+#include "../../../utils/libs/imgui/imgui.h"
 void CustomCursorDraw()
 {
     ImGuiIO& io = ImGui::GetIO();
@@ -19,7 +18,7 @@ void CustomCursorDraw()
 }
 void MenuDraw()
 {
-	ImGui::Begin("Pxcket Unity", &vars->UI->ToggleMenu);
+	ImGui::Begin("Pxcket Unity", &globals::UI::ToggleMenu);
     {
 
     }
