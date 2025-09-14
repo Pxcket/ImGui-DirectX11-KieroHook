@@ -9,8 +9,6 @@ A professional-grade DirectX 11 hook with ImGui integration, built on Kiero. Opt
 ## 📌 Project Origins
 
 This project is a maintained and enhanced fork of:
-[https://github.com/rdbo/ImGui-DirectX-11-Kiero-Hook](https://github.com/rdbo/ImGui-DirectX-11-Kiero-Hook)
-
 Significant improvements include:
 - Complete codebase reorganization
 - Enhanced security checks
