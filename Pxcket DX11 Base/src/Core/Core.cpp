@@ -12,6 +12,7 @@ namespace Core {
         }
 
 #ifdef PPV
+        CMD::INIT_CMD();
         Console::Load();
 #endif 
         s_IsReady = true;
