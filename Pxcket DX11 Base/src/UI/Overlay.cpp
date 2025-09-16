@@ -39,10 +39,7 @@ namespace UI {
             ImGui_ImplWin32_NewFrame();
             ImGui::NewFrame();
 
-            if (globals::open)
-            {
-                Menu::Render(); // you can do "if (!globals::open) return;" on top of "Menu::Render" void but i dont care
-            }
+            Menu::Render(); 
 
             ImGui::Render();
             pContext->OMSetRenderTargets(1, &mainRenderTargetView, NULL);

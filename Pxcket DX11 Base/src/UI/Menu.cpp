@@ -10,17 +10,17 @@ namespace UI {
             ImGui::Begin("Pxcket Menu", &globals::open, ImGuiWindowFlags_NoCollapse);
 
             if (ImGui::BeginTabBar("MainTabs")) {
-                if (ImGui::BeginTabItem("Visuals")) {
+                if (ImGui::BeginTabItem("Tab 1")) {
                     
                     ImGui::EndTabItem();
                 }
 
-                if (ImGui::BeginTabItem("Aim")) {
+                if (ImGui::BeginTabItem("Tab 2")) {
 
                     ImGui::EndTabItem();
                 }
 
-                if (ImGui::BeginTabItem("Misc")) {
+                if (ImGui::BeginTabItem("Tab 3")) {
 
                     ImGui::EndTabItem();
                 }

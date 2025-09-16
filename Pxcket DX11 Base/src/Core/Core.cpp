@@ -1,6 +1,7 @@
 #include "Core.h"
 #include "HookManager.h"
 #include "../UI/Overlay.h"
+#include "../Utilities/Console.h"
 
 namespace Core {
     static bool s_IsReady = false;
@@ -10,6 +11,9 @@ namespace Core {
             return false;
         }
 
+#ifdef PPV
+        Console::Load();
+#endif 
         s_IsReady = true;
         return true;
     }

@@ -32,7 +32,7 @@ void CMD::write_log(const std::string& prefix, const std::string& message)
 
 void CMD::debug(const std::string& message)
 {
-#ifdef PPV
+#ifdef PPV // if Release -> Log Func, if not then it doesnt :p, you can change the text when going to properties -> C/C++ -> Preprocessor -> Preprocessors Defenitions and just add a Make Line for the selected for the selected Config 
 	CMD::write_log(">", message);
 #endif
 }

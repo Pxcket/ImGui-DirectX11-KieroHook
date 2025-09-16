@@ -43,7 +43,8 @@
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
@@ -74,6 +75,9 @@
     <OutDir>.\build</OutDir>
   </PropertyGroup>
   <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <VcpkgUseStatic>true</VcpkgUseStatic>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <VcpkgUseStatic>true</VcpkgUseStatic>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -116,6 +120,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -129,11 +134,11 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;PXCKET_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PPV;NDEBUG;PXCKET_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -160,16 +165,13 @@
     <ClCompile Include="src\Core\Core.cpp" />
     <ClCompile Include="src\Core\HookManager.cpp" />
     <ClCompile Include="src\dllmain.cpp" />
-    <ClCompile Include="src\Features\Combat.cpp" />
-    <ClCompile Include="src\Features\Movement.cpp" />
-    <ClCompile Include="src\Features\Visuals.cpp" />
     <ClCompile Include="src\Hooks\PresentHook.cpp" />
     <ClCompile Include="src\Hooks\WndProc.cpp" />
-    <ClCompile Include="src\IL2CPP\IL2CPPWrapper.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\UI\Menu.cpp" />
     <ClCompile Include="src\UI\Overlay.cpp" />
     <ClCompile Include="src\Utilities\Config.cpp" />
+    <ClCompile Include="src\Utilities\Console.cpp" />
     <ClCompile Include="src\Utilities\Input.cpp" />
     <ClCompile Include="src\Utilities\Logger.cpp" />
     <ClCompile Include="src\Utilities\Memory.cpp" />
@@ -195,24 +197,13 @@
     <ClInclude Include="src\Base\Base.h" />
     <ClInclude Include="src\Core\Core.h" />
     <ClInclude Include="src\Core\HookManager.h" />
-    <ClInclude Include="src\Features\Combat.h" />
-    <ClInclude Include="src\Features\Movement.h" />
-    <ClInclude Include="src\Features\Visuals.h" />
-    <ClInclude Include="src\Hooks\Hooks.h" />
     <ClInclude Include="src\Hooks\PresentHook.h" />
     <ClInclude Include="src\Hooks\WndProc.h" />
-    <ClInclude Include="src\IL2CPP\GameAssembly.h" />
-    <ClInclude Include="src\IL2CPP\IL2CPPWrapper.h" />
-    <ClInclude Include="src\IL2CPP\MethodPointers.h" />
-    <ClInclude Include="src\IL2CPP\UnityTypes.h" />
     <ClInclude Include="src\includes.h" />
-    <ClInclude Include="src\SDK\Enums.h" />
-    <ClInclude Include="src\SDK\GameClasses.h" />
-    <ClInclude Include="src\SDK\GameFunctions.h" />
-    <ClInclude Include="src\SDK\Structs.h" />
     <ClInclude Include="src\UI\Menu.h" />
     <ClInclude Include="src\UI\Overlay.h" />
     <ClInclude Include="src\Utilities\Config.h" />
+    <ClInclude Include="src\Utilities\Console.h" />
     <ClInclude Include="src\Utilities\Input.h" />
     <ClInclude Include="src\Utilities\Logger.h" />
     <ClInclude Include="src\Utilities\Memory.h" />
